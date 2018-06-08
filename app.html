@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<!-- <form action="#" method="post" onsubmit=" return validate() ; "> -->
+	<form action="#" method="post" id="form1">
+		<table id="table">
+			<tr>
+				<th>Username : </th>
+				<td>
+					<div>
+            			<input type="text" placeholder="Username" id="username" />
+            			<div id="uname_err"></div>
+        			</div>
+				</td>
+			</tr>
+
+			<tr>
+				<th>Password : </th>
+				<td>
+					<div>
+            			<input type="text" placeholder="Password" id="pwd" />
+            			<div id="pwd_err"></div>
+        			</div>
+				</td>
+			</tr>
+
+			<tr>
+				<th> E-mail : </th>
+				<td>
+					 <div>
+			            <input type="text" placeholder="Email" id="email" />
+			            <div id="email_err"></div>
+       				 </div>
+				</td>
+			</tr>
+
+			<tr>
+				<th>Location : </th>
+				<td>
+					 <div>
+			            <input type="text" placeholder="Location" id="location" />
+			            <div id="loc_err"></div>
+        			</div>
+				</td>
+			</tr>
+
+			<tr>
+				<th>Company</th>
+				<td>
+        			<div>
+			            <input type="text" placeholder="Company" id="company" />
+			            <div id="company_err"></div>
+        			</div>
+				</td>
+			</tr>
+
+			<tr>
+				<th> Gender :</th>
+				<td>
+					<div> 
+						
+							<input type="radio" name="gender" id="g1" value="male" class="test" /> Male
+			            <input type="radio" name='gender' id="g2" value="female" class="test" /> Female
+						
+						<p id="gender" style="color: red ; display: inline;" >
+
+						</p>
+			            
+			            <!-- <input type="button" value="check" onclick="gender_check()"> -->
+        			</div>
+        			<!-- <div id="gender" style="color: red"></div> -->
+				</td>
+			</tr>
+
+			<tr>
+				<th></th>
+				<td>
+					<div>
+            			<input type="button" value="Submit" id="btn" onclick="saveData()" />
+        			</div>
+				</td>
+			</tr>
+		</table>
+	
+	</form>
+
+	<br>
+	<hr>
+
+	<div id="result">
+		
+	</div>
+
+<script type="text/javascript" src="ass1.js"></script>
+</body>
+</html>
